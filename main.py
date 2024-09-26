@@ -15,11 +15,11 @@ import statsmodels.api as sm
 from_date = "2018-01-01"
 to_date = "2024-01-01"
 url = "https://api.capitalstake.com/2.0/market/historical"
-headers = {'Authorization' : 'Bearer bmV4dGNhcCA1MmVRc1VJbzRsUWM5ZHdhQVh1OE11V2tsaw=='}
+headers = {'Authorization' : ''}
 
 def get_KSE100(code):
     full_url = f"https://api.capitalstake.com/2.0/market/index/points?code={code}"
-    headers = {'Authorization' : 'Bearer bmV4dGNhcCA1MmVRc1VJbzRsUWM5ZHdhQVh1OE11V2tsaw=='}
+    headers = {'Authorization' : ''}
     response = requests.get(full_url, headers=headers)
 
     if response.status_code == 200:
